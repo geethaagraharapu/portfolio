@@ -1,0 +1,175 @@
+body{
+    margin:0px;
+    padding:0px;
+    color:white;
+    background-color: black;
+    animation: bg 6s ease forwards;
+}
+@keyframes bg {
+    from{
+        background-color: black;
+    }
+    to{
+        background-color: rgb(126, 0, 59);
+    }
+}
+nav{
+    position: sticky;
+    
+
+}
+nav ul{
+    list-style-type: none;
+    display:flex;
+    margin:0px;
+    padding:20px;
+    justify-content: center;
+    
+    
+}
+nav ul li{
+    
+    padding: 20px 30px;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    position: relative;
+    top: -300%;
+    animation: slide-down 1s ease forwards;
+
+} 
+@keyframes slide-down {
+    from{
+        top: -300%;
+    }
+    to{
+        top : 10%;
+        
+    }
+    
+}
+
+nav li:hover{
+    background-color:rgb(63, 0, 0);
+    line-height: 30px;
+    border-radius: 20%;
+    box-shadow: 0px 0px 10px rgb(250, 157, 214);
+    box-shadow: 0px 0px 40px rgb(250, 157, 214);
+    box-shadow: 0px 0px 60px rgb(250, 157, 214);
+
+
+}
+#lastname{
+    color: rgb(255, 77, 187);
+    font-family:"lucida calligraphy";
+    text-shadow: 0px 5px 10px rgb(216, 136, 149);
+    
+}
+#name  {
+    font-family:cursive;
+
+    text-align: center;
+    position: relative;
+    left: -100%;
+    animation: slide-in 5s ease forwards;
+    
+}
+@keyframes slide-in {
+    from {
+        left:-100%;
+    }
+    to{
+        left:-25%;
+    }
+}
+.container{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 7% 20%;
+    animation: all-effect 5s ease forwards;
+    
+}
+@keyframes all-effect {
+    from{
+        
+        color:transparent;
+    }
+    to{
+        
+        color:white;
+    }
+}
+.split{
+    display: flex;
+    height:100%;
+    
+    align-items: center;
+}
+.left{
+    
+    
+    flex:80%;
+}
+.right{
+    
+    flex:30%;
+}
+
+
+#hire ,#projects{
+    background: linear-gradient(to right ,rgb(243, 117, 138) , rgb(206, 6, 129));
+    border-radius: 50px;
+    padding:3%;
+    width:200px;
+    color: white;
+    border-color: black;
+    border-width: 1px;
+    left:-100%;
+    animation:btn-effect 6s ease forwards;
+    
+}
+@keyframes btn-effect{
+    
+    from{
+        left:-100%;
+        border-color: transparent;
+        color: transparent;
+        background: transparent;
+        
+    }
+    to{    
+        left:0%;
+        border-color: black;
+        color: white; 
+        background: linear-gradient(to right ,rgb(243, 117, 138) , rgb(206, 6, 129));
+        
+    }
+}
+#hire:hover ,#projects:hover{
+    background:rgb(63, 0, 39);
+    box-shadow: 0px 0px 10px rgb(233, 171, 171);
+    box-shadow: 0px 0px 30px rgb(235, 168, 168);
+    box-shadow: 0px 0px 60px rgb(236, 173, 173);
+    line-height: 30px;
+    
+
+}
+img{
+    height:200px;
+    width: 200px;
+    right:-100%;
+    animation:slide-to-left 7s ease forwards;
+}
+@keyframes slide-to-left {
+    from{
+        transform: scale(0);
+    }
+    to{
+        transform: scale(1);
+    }
+}
